@@ -1,0 +1,30 @@
+<div class="row">
+    <h1 class="title">Saved Articles</h1>
+    <div id="saved-results"></div>
+</div>
+
+<div class="row">
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+            <p id="note-header" class="modal-card-title">
+                {{!-- Modal header text dynamically rendered --}}
+            </p>
+            <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+            <div id="note-list">
+                <p>Write the first note for this article.</p>
+            </div>
+            <hr>
+            <div>
+                <textarea id="new-note-field"></textarea>
+            </div>
+            </section>
+            <footer class="modal-card-foot">
+            {{!-- Save note button dynamically rendered to include data-id attribute of article--}}
+            </footer>
+        </div>
+    </div>
+</div>
